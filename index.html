@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Florida for All to elect a new generation of progressive leaders dedicated to transforming Florida's economy and democracy. Learn about our mission, candidates, and platform.">
+    <meta name="keywords" content="Florida for All, progressive leaders, election 2025, democracy, economy, Florida politics">
+    <meta name="author" content="Florida for All Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Florida for All - Building a Future for Every Floridian">
+    <meta property="og:description" content="Support a movement to elect diverse, working-class leaders in Florida. Get involved today!">
+    <meta property="og:image" content="https://yourdomain.com/florida-for-all-logo.png">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Florida for All - Building a Future for Every Floridian">
+    <meta name="twitter:description" content="Join us to elect progressive leaders for a better Florida in 2025.">
+    <meta name="twitter:image" content="https://yourdomain.com/florida-for-all-logo.png">
+    <title>Florida for All - Building a Future for Every Floridian</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: #1a2a44;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #1a2a44;
+        }
+        .logo a {
+            text-decoration: none;
+        }
+        .logo img {
+            height: 165px;
+            margin: 0;
+            vertical-align: middle;
+        }
+        nav .navbar-nav .nav-link {
+            color: #fff !important;
+            font-family: Verdana, Geneva, Tahoma, sans-serif; /* Bold Verdana font */
+            font-weight: 700; /* Bold */
+        }
+        .cta-button {
+            padding: 10px 20px;
+            background: #e91e63;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .glowing-line {
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #00a8e8, #e91e63, #00a8e8);
+            box-shadow: 0 0 10px #00a8e8, 0 0 20px #e91e63;
+            animation: glow 2s infinite alternate;
+            z-index: 1;
+        }
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 5px #00a8e8, 0 0 10px #e91e63;
+            }
+            to {
+                box-shadow: 0 0 15px #00a8e8, 0 0 30px #e91e63;
+            }
+        }
+        .hero-gif {
+            width: 100%;
+            height: 400px;
+            background: url('../media/hero-gif.gif') no-repeat center/cover;
+            position: relative;
+        }
+        .hero-gif h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            margin: 0;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero-gif .highlight {
+            color: #e91e63;
+        }
+        .squad-section, .about-section, .platform-section, .news-section {
+            background: #fff;
+            color: #1a2a44;
+            padding: 15px 20px 15px 20px;
+            text-align: left;
+            width: 40%;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+        .squad-section h2, .about-section h2, .platform-section h2, .news-section h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .squad-section p, .about-section p, .platform-section p, .news-section p {
+            font-size: 16px;
+        }
+        footer {
+            background: #1a2a44;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #e91e63;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #00a8e8;
+        }
+
+        /* Mobile Responsiveness with Bootstrap */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .logo {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            .logo img {
+                height: 100px;
+            }
+            .glowing-line {
+                height: 3px;
+            }
+            nav {
+                width: 100%;
+            }
+            .hero-gif {
+                height: 250px;
+            }
+            .hero-gif h1 {
+                font-size: 36px;
+            }
+            .squad-section, .about-section, .platform-section, .news-section {
+                width: 90%;
+            }
+            footer {
+                padding: 10px;
+            }
+        }
+
+        /* Hamburger Menu Styling */
+        .menu-toggle {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="logo">
+            <a href="index.html"><img src="media/florida_for_all_logo.png" alt="Florida for All Logo" class="img-fluid"></a>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="menu-toggle" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">☰</div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nominate">Nominate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#candidates">Candidates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#platform">Platform</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                </ul>
+            </div>
+        </nav>
+        <a href="#donate" class="cta-button btn">Donate</a>
+    </header>
+
+    <div class="glowing-line"></div>
+
+    <section class="hero-gif" id="home">
+        <h1>LET'S ELECT THE <span class="highlight">NEXT GENERATION</span></h1>
+    </section>
+
+    <section class="squad-section" id="about">
+        <h2>ABOUT FLORIDA FOR ALL</h2>
+        <p>Florida for All is a grassroots movement committed to electing a new generation of diverse, progressive, working-class leaders. Founded in 2025, our mission is to transform Florida's economy and democracy by prioritizing the needs of everyday Floridians over corporate interests. Learn how you can get involved today!</p>
+    </section>
+
+    <section class="squad-section" id="nominate">
+        <h2>NOMINATE A CANDIDATE</h2>
+        <p>Do you know a passionate individual ready to fight for Florida's future? Nominate them to join our movement. Fill out our nomination form to start the process and help us build a stronger, more representative leadership.</p>
+    </section>
+
+    <section class="squad-section" id="candidates">
+        <h2>MEET OUR CANDIDATES</h2>
+        <p>Our candidates are dedicated community leaders from across Florida, bringing fresh perspectives to the table. Stay tuned for profiles and updates as we announce our 2025 election slate.</p>
+    </section>
+
+    <section class="platform-section" id="platform">
+        <h2>OUR PLATFORM</h2>
+        <p>Our platform focuses on affordable healthcare, renewable energy, education reform, and economic justice. We advocate for policies that benefit all Floridians, not just the wealthy elite. Explore our detailed policy proposals and join the conversation.</p>
+    </section>
+
+    <section class="news-section" id="news">
+        <h2>LATEST NEWS</h2>
+        <p>Stay updated with the latest developments from Florida for All. On July 15, 2025, we launched our campaign with a rally in Miami, drawing over 500 supporters. Check back for more updates!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Florida for All. All rights reserved.</p>
+        <div>
+            <a href="https://facebook.com/floridaforall" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/floridaforall" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/floridaforall" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Optional: Fallback for manual toggle if Bootstrap JS fails
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.navbar-collapse').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
