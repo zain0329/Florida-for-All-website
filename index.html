@@ -46,28 +46,26 @@
         .nav-menu {
             display: flex;
             gap: 1.5rem;
+            align-items: center;
         }
-        .nav-menu a {
+        .nav-menu a, .nav-menu .donate-btn {
             color: #fff;
             font-weight: 700;
             font-size: 1.1rem;
             text-transform: uppercase;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, background 0.3s ease;
         }
         .nav-menu a:hover {
             color: #00a8e8;
         }
-        .donate-btn {
+        .nav-menu .donate-btn {
             background: #fff;
             color: #e91e63;
             padding: 0.5rem 1.5rem;
             border-radius: 5px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: background 0.3s ease;
         }
-        .donate-btn:hover {
+        .nav-menu .donate-btn:hover {
             background: #00a8e8;
             color: #fff;
         }
@@ -92,7 +90,8 @@
             }
             .nav-menu.active { display: flex; }
             .navbar .logo img { margin-right: 0; margin-bottom: 0.5rem; }
-            .donate-btn { display: none; } /* Hide button on mobile, can be adjusted */
+            .nav-menu .donate-btn { background: #e91e63; color: #fff; border: 1px solid #fff; } /* Adjusted for mobile contrast */
+            .nav-menu .donate-btn:hover { background: #00a8e8; color: #fff; border-color: #00a8e8; }
         }
         .hero {
             background: url('https://github.com/zain0329/Florida-for-All-website/blob/main/media/hero-gif.gif?raw=true') no-repeat center/cover;
@@ -181,8 +180,8 @@
             <a href="candidates.html">Candidates</a>
             <a href="platform.html">Platform</a>
             <a href="news.html">News</a>
+            <a href="donate.html" class="donate-btn">Donate</a>
         </div>
-        <a href="donate.html" class="donate-btn">Donate</a>
     </header>
 
     <div class="hero" id="home">

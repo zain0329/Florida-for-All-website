@@ -35,28 +35,26 @@
         .nav-menu {
             display: flex;
             gap: 1.5rem;
+            align-items: center;
         }
-        .nav-menu a {
+        .nav-menu a, .nav-menu .donate-btn {
             color: #fff;
             font-weight: 700;
             font-size: 1.1rem;
             text-transform: uppercase;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, background 0.3s ease;
         }
         .nav-menu a:hover {
             color: #00a8e8;
         }
-        .donate-btn {
+        .nav-menu .donate-btn {
             background: #fff;
             color: #e91e63;
             padding: 0.5rem 1.5rem;
             border-radius: 5px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: background 0.3s ease;
         }
-        .donate-btn:hover {
+        .nav-menu .donate-btn:hover {
             background: #00a8e8;
             color: #fff;
         }
@@ -81,7 +79,8 @@
             }
             .nav-menu.active { display: flex; }
             .navbar .logo img { margin-right: 0; margin-bottom: 0.5rem; }
-            .donate-btn { display: none; } /* Hide button on mobile, can be adjusted */
+            .nav-menu .donate-btn { background: #e91e63; color: #fff; border: 1px solid #fff; }
+            .nav-menu .donate-btn:hover { background: #00a8e8; color: #fff; border-color: #00a8e8; }
         }
         .hero {
             background: url('https://via.placeholder.com/1920x400.png?text=AI+Image:+Candidate+Profiles') no-repeat center/cover;
@@ -169,8 +168,8 @@
             <a href="candidates.html">Candidates</a>
             <a href="platform.html">Platform</a>
             <a href="news.html">News</a>
+            <a href="donate.html" class="donate-btn">Donate</a>
         </div>
-        <a href="donate.html" class="donate-btn">Donate</a>
     </header>
 
     <div class="hero">
@@ -180,7 +179,7 @@
     <div class="content">
         <img src="https://via.placeholder.com/800x400.png?text=AI+Image:+Candidate+Profiles" alt="Candidate Profiles Image" class="w-full h-48 object-cover rounded mb-4">
         <p>
-            Our candidates are dedicated community leaders from across Florida, bringing fresh perspectives to the 2025 election. Stay tuned for detailed profiles and updates as we announce our slate. Check back as of 09:01 PM EDT on Saturday, July 19, 2025, for the latest information.
+            Our candidates are dedicated community leaders from across Florida, bringing fresh perspectives to the 2025 election. As of 09:36 PM EDT on Saturday, July 19, 2025, we are excited to announce that our candidate slate is being finalized. Stay tuned for detailed profiles and updates as we introduce them to the public.
         </p>
         <div class="text-center mt-6">
             <a href="nominate.html" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Nominate More</a>

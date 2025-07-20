@@ -35,28 +35,26 @@
         .nav-menu {
             display: flex;
             gap: 1.5rem;
+            align-items: center;
         }
-        .nav-menu a {
+        .nav-menu a, .nav-menu .donate-btn {
             color: #fff;
             font-weight: 700;
             font-size: 1.1rem;
             text-transform: uppercase;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, background 0.3s ease;
         }
         .nav-menu a:hover {
             color: #00a8e8;
         }
-        .donate-btn {
+        .nav-menu .donate-btn {
             background: #fff;
             color: #e91e63;
             padding: 0.5rem 1.5rem;
             border-radius: 5px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: background 0.3s ease;
         }
-        .donate-btn:hover {
+        .nav-menu .donate-btn:hover {
             background: #00a8e8;
             color: #fff;
         }
@@ -81,7 +79,8 @@
             }
             .nav-menu.active { display: flex; }
             .navbar .logo img { margin-right: 0; margin-bottom: 0.5rem; }
-            .donate-btn { display: none; } /* Hide button on mobile, can be adjusted */
+            .nav-menu .donate-btn { background: #e91e63; color: #fff; border: 1px solid #fff; }
+            .nav-menu .donate-btn:hover { background: #00a8e8; color: #fff; border-color: #00a8e8; }
         }
         .hero {
             background: url('https://via.placeholder.com/1920x400.png?text=AI+Image:+News+Event') no-repeat center/cover;
@@ -169,8 +168,8 @@
             <a href="candidates.html">Candidates</a>
             <a href="platform.html">Platform</a>
             <a href="news.html">News</a>
+            <a href="donate.html" class="donate-btn">Donate</a>
         </div>
-        <a href="donate.html" class="donate-btn">Donate</a>
     </header>
 
     <div class="hero">
@@ -178,12 +177,12 @@
     </div>
 
     <div class="content">
-        <img src="https://via.placeholder.com/800x400.png?text=AI+Image:+News+Event" alt="News Event Image">
+        <img src="https://via.placeholder.com/800x400.png?text=AI+Image:+News+Event" alt="News Event Image" class="w-full h-48 object-cover rounded mb-4">
         <p>
-            Stay updated with the latest from Florida for All. On July 15, 2025, we held a successful rally in Miami, drawing over 500 supporters. As of 08:59 PM EDT on Saturday, July 19, 2025, we’re gearing up for our next event in Orlando. Check back for more updates!
+            Stay updated with the latest from Florida for All. On July 15, 2025, we held a successful rally in Miami, drawing over 500 supporters. As of 09:38 PM EDT on Saturday, July 19, 2025, we’re preparing for our next event in Orlando scheduled for next week. Check back for more updates!
         </p>
         <div class="text-center mt-6">
-            <a href="platform.html" class="btn">Learn Our Platform</a>
+            <a href="platform.html" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Learn Our Platform</a>
         </div>
     </div>
 
